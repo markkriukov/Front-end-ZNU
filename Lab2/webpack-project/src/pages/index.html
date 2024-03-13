@@ -1,0 +1,44 @@
+<!-- src/template.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .bg-1 {
+            background-color: #1abc9c;
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="container-fluid bg-1 text-center">
+            <h3>Крюков Марк</h3>
+            <h3>6.1211-2пі</h3>
+        </div>
+
+        <div class="container-fluid bg-2 text-center">
+            <h4>Спеціальність: Інженерія ПЗ</h4>
+            <h4>Курс: 3</h4>
+            <h4>Номер групи: 2пі</h4>
+            <h4>Номер у журналі академічної групи: 7</h4>
+            <p><a href="about.html">ABOUT</a></p> 
+        </div>        
+    </div>
+</body>
+
+</html>
