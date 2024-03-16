@@ -5,21 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {},
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            },
-            {
-                test: /\.html$/i,
-                loader: 'html-loader',
-            },
-        ],
-    },
+    output: {},
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './src/pages/index.html'),
@@ -39,7 +25,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: './src/assets/images', to: './dist/images' }
+                { from: './src/assets/images', to: './src/assets/images' }
             ]
         })
     ],
